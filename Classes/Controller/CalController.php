@@ -105,7 +105,7 @@ class CalController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
             foreach ($search as $el) {
                 $uri = $this->uriBuilder
                     ->reset()
-                    ->setTargetPageUid($this->settings['pid']['defaultDetailPid'])
+                    ->setTargetPageUid((int)$this->settings['pid']['defaultDetailPid'])
                     ->uriFor(
                         'detail',
                         ['index' => $el->getUid()],
@@ -116,7 +116,7 @@ class CalController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
                 $uriAjax = $this->uriBuilder
                     ->reset()
-                    ->setTargetPageUid($this->settings['pid']['defaultDetailPid'])
+                    ->setTargetPageUid((int)$this->settings['pid']['defaultDetailPid'])
                     ->setTargetPageType(1573760945)
                     ->uriFor(
                         'detail',
