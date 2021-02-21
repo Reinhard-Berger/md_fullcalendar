@@ -12,6 +12,7 @@ namespace Mediadreams\MdFullcalendar\Controller;
  *
  ***/
 
+use DateTime;
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
