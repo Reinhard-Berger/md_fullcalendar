@@ -107,8 +107,7 @@ class CalController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         $selectedStartNew->setTimestamp($selectedStart);
 
         $search = $this->indexRepository->findByTimeSlot($selectedStartNew, $selectedEndNew);
-        
-        $search = $this->indexRepository->findByTimeSlot($selectedEnd, $selectedStart);
+       
 
         if ($type == 1573738558) {
             $items = [];
