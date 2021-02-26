@@ -107,6 +107,7 @@
                     </c:link.booking>
                 </f:if>
 
+                <f:debug>{settings}</f:debug>
                 <f:if condition="{settings.showIcsIcalButton}">
                     <f:link.page pageUid="{settings.pid.defaultDetailPid}"
                                  additionalParams="{tx_calendarize_calendar: {action: 'detail', format: 'ics', index: '{index}'}}"
